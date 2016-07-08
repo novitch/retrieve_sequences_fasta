@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
 use Getopt::Long;
-my $usage = "Erreur!!";
+my $usage = "Erreur!!perl retrieve_sequences_fasta.pl -infile=[geneID] -seq=[fasta_file] -geneIDtype=[simple if no space in fasta file; complex if space present] -out=[output] ";
 
 my ($f, $f1, $out, $type);
 my %hash;

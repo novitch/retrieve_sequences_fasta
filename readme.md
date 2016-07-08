@@ -15,13 +15,7 @@
 #
 # REQUIREMENTS:
 # Perl >5.0
-# OUTPUT:
-#-output: path to the file to save the corresponding tab delimited file. The default output file is “queryfile.annot.txt”
-#
-# USAGE: perl taxonomic_annotation.v1.pl -query=[] -blastkegg=[] -blastrefseq=[] -output=[] OPTIONS -similarity=[integer] -similarity_species=[integer] -similarity_genus=[integer] -length=[integer] -evalue=[string]
-#
-# REQUIREMENTS:
-# Perl >5.0
+
 
 
 
