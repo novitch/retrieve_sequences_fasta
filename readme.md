@@ -9,7 +9,7 @@
 # -out
 #
 # OUTPUT:
-#-output: path to the file to save the corresponding tab delimited file. The default output file is “queryfile.annot.txt”
+#-output: path to the file to save the corresponding tab delimited file.
 #
 # USAGE: perl retrieve_sequences_fasta.pl -infile=[geneID] -seq=[fasta_file] -geneIDtype=["simple" if no space in fasta file; "complex" if space present] -out=[output]
 #
