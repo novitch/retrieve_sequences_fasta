@@ -25,7 +25,7 @@ while (<FILE1>) {
 
 close FILE1;
 ##############################################################################
-if (($type ne "simple") || ($type ne "complex")){
+if (($type ne "simple") && ($type ne "complex")){
     die "Error!! geneIDtype must be simple or complex, it's simple:)\n$usage\n";
 }
 ###############################################################################
