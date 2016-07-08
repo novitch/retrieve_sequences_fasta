@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
 use Getopt::Long;
-my $usage = "Erreur!!perl retrieve_sequences_fasta.pl -infile=[geneID] -seq=[fasta_file] -geneIDtype=[simple if no space in fasta file; complex if space present] -out=[output] ";
+my $usage = "Erreur!!perl retrieve_sequences_fasta.pl -infile=[geneID] -seq=[fasta_file] -geneIDtype=[simple if no space in fasta file; complex if space present] -out=[output]\n";
 
 my ($f, $f1, $out, $type);
 my %hash;
@@ -26,7 +26,7 @@ while (<FILE1>) {
 close FILE1;
 ##############################################################################
 if (($type ne "simple") || ($type ne "complex")){
-    die "$usage geneIDtype must be simple or complex, it's simple:)\n";
+    die "Error!! geneIDtype must be simple or complex, it's simple:)\n$usage\n";
 }
 ###############################################################################
 ### geneID to sequence ###
