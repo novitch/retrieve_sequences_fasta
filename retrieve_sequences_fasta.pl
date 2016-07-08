@@ -75,6 +75,6 @@ foreach my $i (keys %hash){
         $comptagerate++;
     }
 }
-print "total of unretrieved gene sequences comptagerate / comptagetot\n";
+print "total of unretrieved gene sequences $comptagerate / $comptagetot\n";
 close W;
 close FILE3;
