@@ -63,16 +63,18 @@ while (<FILE3>) {
 }
 
 local $/ = "\n";
-
+my $comptagetot;
+my $comptagerate;
 foreach my $i (keys %hash){
+    $comptagetot++;
     if ($fasta{$i}){
         print W "\>".$i."\n".$fasta{$i}."\n";
     }
     else{
         print "Not retrieved: ".$i."\n";
+        $comptagerate++;
     }
 }
-
-
+print "total of unretrieved gene sequences comptagerate / comptagetot\n";
 close W;
 close FILE3;
